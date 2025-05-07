@@ -34,7 +34,7 @@ cd /pc2
 sudo docker-compose up --build 
 ```
 
-- Construir la aplicacion corre el puerto 4000
+- Construir la aplicacion corre en el puerto 4000
 ```bash
 sudo docker-compose up --build 
 ```
