@@ -4,9 +4,9 @@
 
 ### Como desplegar proyecto en servidor
 # Supociciones
-- Para este deploy suponemos que solo tiene sera la primera aplicacion que desplegara con APECHE
+- Para este deploy suponemos que sera la primera aplicacion que desplegara con APACHE y que lo tiene instalado
 - Suponemos que tiene docker-compose instalado en su servidor
-- Suponemos que tiene congirudo para tener tranfico https para la configuracion de apache 
+- Suponemos que tiene https configurad en apache 
 
 # Pasos
 - Clonar el repositorio
