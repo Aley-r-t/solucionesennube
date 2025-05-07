@@ -1,6 +1,13 @@
 # En este repositorio iran los laboratorios del curso de desarrollo de soluciones en la nube
 ## PC2
+
+
 ### Como desplegar proyecto en servidor
+# Supociciones
+- Para este deploy suponemos que solo tiene sera la primera aplicacion que desplegara con APECHE
+- Suponemos que tiene docker-compose instalado en su servidor
+- Suponemos que tiene congirudo para tener tranfico https para la configuracion de apache 
+
 
 - Clonar el repositorio
 ```bash
