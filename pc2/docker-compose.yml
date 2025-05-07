@@ -11,7 +11,6 @@ services:
       POSTGRES_PASSWORD: password
     volumes:
       - db-data:/var/lib/postgresql/data
-      - ./db/init.sql:/docker-entrypoint-initdb.d/init.sql
     ports:
       - "5432:5432"
 
@@ -33,15 +32,6 @@ services:
       sh -c "python manage.py migrate &&
              python manage.py seed_data &&
              gunicorn pc2.wsgi:application --bind 0.0.0.0:8000"
-  
-  frontend:
-    build: ./front
-    container_name: app-frontend
-    restart: always
-    ports:
-      - "5173:5173"
-    depends_on:
-      - backend
 
 volumes:
   db-data:
