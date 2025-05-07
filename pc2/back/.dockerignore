@@ -1,0 +1,20 @@
+venv/
+# Entornos virtuales de Python
+venv/
+.venv/
+env/
+.env/
+
+# Archivos de Python
+*.pyc
+__pycache__/
+
+# Archivos de desarrollo y temporales
+.git/
+.gitignore
+*.log
+*.swp
+*.bak
+tmp/
+temp/
+db.sqlite3
