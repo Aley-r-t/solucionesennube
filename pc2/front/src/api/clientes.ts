@@ -1,5 +1,5 @@
 export const fetchClientes = async (token: string) => {
-    const res = await fetch("http://localhost:8000/api/clientes/", {
+    const res = await fetch("/api/clientes/", {
       headers: {
         Authorization: `Bearer ${token}`,
       },

@@ -1,5 +1,5 @@
 export const login = async (username: string, password: string) => {
-  const res = await fetch("http://localhost:8000/api/login/", {
+  const res = await fetch("/api/login/", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({ username, password }),
@@ -16,7 +16,7 @@ interface RegisterPayload {
 }
 
 export const register = async (payload: RegisterPayload) => {
-  const res = await fetch("http://localhost:8000/api/register/", {
+  const res = await fetch("/api/register/", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify(payload),
