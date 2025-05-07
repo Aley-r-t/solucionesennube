@@ -18,7 +18,7 @@ services:
     build: ./back
     container_name: mi-backend-django
     restart: always
-    environment:
+    environment: 
       DB_HOST: db
       DB_PORT: 5432
       DB_USER: user
@@ -32,6 +32,15 @@ services:
       sh -c "python manage.py migrate &&
              python manage.py seed_data &&
              gunicorn pc2.wsgi:application --bind 0.0.0.0:8000"
+
+  frontend:
+    build: ./front         # carpeta donde vive el Dockerfile
+    container_name: app-frontend
+    restart: always
+    ports:
+      - "4000:80"                 # host:4000  →  contenedor:80
+    depends_on:
+    - backend
 
 volumes:
   db-data:

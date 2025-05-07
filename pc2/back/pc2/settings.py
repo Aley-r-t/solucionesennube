@@ -24,7 +24,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = "django-insecure-!f$^kj!x1=7r5##p8h-_9$*rp6j*+^6ha&u(y#f5)o*w9oni^9"
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 CSRF_TRUSTED_ORIGINS = ["https://unxdcaminando.online"] 
 
@@ -35,7 +35,7 @@ ALLOWED_HOSTS = [
 ]
 
 CORS_ALLOWED_ORIGINS = [
-    "http://localhost:5173",
+    "http://127.0.0.1:4000",
     "https://unxdcaminando.online",
 ]
 
