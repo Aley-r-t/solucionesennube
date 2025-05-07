@@ -2,8 +2,7 @@ venv/
 # Entornos virtuales de Python
 venv/
 .venv/
-env/
-.env/
+
 
 # Archivos de Python
 *.pyc
