@@ -8,7 +8,7 @@
 - Suponemos que tiene docker-compose instalado en su servidor
 - Suponemos que tiene congirudo para tener tranfico https para la configuracion de apache 
 
-
+# Pasos
 - Clonar el repositorio
 ```bash
 git clone  https://github.com/Aley-r-t/solucionesennube.git
